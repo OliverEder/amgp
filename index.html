@@ -11,8 +11,15 @@
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <link 
+        rel="stylesheet" 
+        href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" 
+        crossorigin="anonymous"
+    />
 </head>
 <body>
+    <!-- Navbar -->
     <nav class="navbar is-info" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
             <a class="navbar-item" href="https://bulma.io">
@@ -57,6 +64,10 @@
                 <a class="navbar-item">
                     Directorio
                 </a>
+
+                <a class="navbar-item">
+                    Capitulos de Estudiantes
+                </a>
       
                 <div class="navbar-item has-dropdown is-hoverable">
                     <a class="navbar-link">
@@ -83,7 +94,7 @@
       
             <div class="navbar-end">
                 <a class="navbar-item">
-                    Incribete
+                    Inscribete
                 </a>
                 <a class="navbar-item">
                     Inicio de sesión
@@ -98,34 +109,110 @@
             </div>
         </div>
     </div>
-    
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-
-        // Get all "navbar-burger" elements
-        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-
-            // Check if there are any navbar burgers
-            if ($navbarBurgers.length > 0) {
-
-            // Add a click event on each of them
-                $navbarBurgers.forEach( el => {
-                    el.addEventListener('click', () => {
-
-                    // Get the target from the "data-target" attribute
-                    const target = el.dataset.target;
-                    const $target = document.getElementById(target);
-
-                    // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-                    el.classList.toggle('is-active');
-                    $target.classList.toggle('is-active');
-
-                    });
-                });
-            }
-
-        });
-
-    </script>
+    <div class="main">
+        <div class="section">
+            
+        </div>
+    </div>
+    <!-- End Navbar -->
+    <div class="footer-divider">
+        <div class="custom-shape-divider-top-1630793305">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+                <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+                <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </div>
+    <footer class="footer">   
+        
+        <div class="columns">
+            
+            <div class="column">
+                <center>
+                <img 
+                    src="./images/LOGO300x300.png" 
+                    width="100" 
+                    height="100" 
+                    style="max-height: 100px;"
+                />
+                <h2 class="footer-title">AMGP</h2>
+                <p class="footer-text">Asociación Mexicana de Geólogos Petroleros A. C.</p>
+            </center>
+            </div>
+            <div class="column is-mobile">
+                <h3 class="has-text-weight-bold footer-text">Nosotros</h3>
+                <hr class="navbar-divider">
+                <p class="has-text-justified is-size-7 has-text-white">
+                    La Asociación Mexicana de Geólogos Petroleros es una organización científico-técnica y está constituida 
+                    por profesionales dedicados a la geología petrolera y otras profesiones afines, aplicadas a la 
+                    exploración y producción petrolera y de otros recursos energéticos, agrupados en Delegaciones Regionales 
+                    que dependen de una Directiva Nacional.
+                </p>
+            </div>
+            <div class="column has-text-weight-bold">
+                <h3 class="has-text-weight-bold footer-text">Menu</h3>
+                <hr class="navbar-divider">
+                <div class="columns is-mobile">
+                    <div class="column">
+                        <p class="has-text-justified is-size-7">
+                            <a class="has-text-warning" href="">Inicio</a>
+                        </p>
+                        <p class="has-text-justified is-size-7">
+                            <a class="has-text-warning" href="">Noticias</a>
+                        </p>
+                        <p class="has-text-justified is-size-7">
+                            <a class="has-text-warning" href="">Eventos</a>
+                        </p>
+                        <p class="has-text-justified is-size-7">
+                            <a class="has-text-warning" href="">Nosotros</a>
+                        </p>
+                    </div>
+                    <div class="column">
+                        <p class="has-text-justified is-size-7">
+                            <a class="has-text-warning" href="">Membresia</a>
+                        </p>
+                        <p class="has-text-justified is-size-7">
+                            <a class="has-text-warning"  href="">Directorio</a>
+                        </p>
+                        <p class="has-text-justified is-size-7">
+                            <a class="has-text-warning" href="">Capitulos de Estudiantes</a>
+                        </p>
+                        <p class="has-text-justified is-size-7 ">
+                            <a class="has-text-warning" href="">Publicaciones</a>
+                        </p>
+                    </div>
+                </div>           
+                    
+            </div>  
+            <div class="column">
+                <h3 class="has-text-weight-bold footer-text">Contacto</h3>
+                <hr class="navbar-divider">
+                <p class="has-text-justified is-size-7 has-text-white">
+                    <i class="fas fa-map-marked"></i>
+                    Dirección: Poniente 134 No. 411 Colonia San Bartolo Atepehuacan Alcaldía Gustavo A. Madero, Ciudad de México
+                </p>
+                <p class="has-text-justified is-size-7 has-text-white">
+                    <i class="fas fa-phone-alt"></i>
+                    Telefono: (+52 0155) 55 6788 40
+                </p>
+                <p class="has-text-justified is-size-7 has-text-white">
+                    <i class="far fa-envelope"></i>
+                    Email: presidencia@amgp.org 
+                </p>
+            </div>
+            
+        </div>
+        <div class="columns">
+            <div class="column">
+                <hr class="navbar-divider">
+                <p class="has-text-centered is-size-7 footer-text">
+                    AMGP &#174; 2021. Todo los derechos reservados
+                </p>
+            </div>
+        </div>
+        
+    </footer>
+<script src="./js/navbar.js"></script>
 </body>
 </html>
