@@ -74,6 +74,48 @@
     fill: #FFFFFF;
 }
 
+.custom-shape-divider-bottom-1631691632 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 29px;
+}
+
+.custom-shape-divider-bottom-1631691632 .shape-fill {
+    fill: #00096b;
+}
+
+.card_main_icon{
+    font-size: 70px;
+}
+
+.swiper-slide-round{
+    border-radius: 10px !important;
+    
+}
+
+.beneficio_content{
+    border-radius: 10px !important;
+    position: relative;
+    min-height: 28rem !important;   
+}
+
+.card_main_image{
+    height: 70px !important;
+    top: 1px;
+}
+
+.beneficio_header{
+    background-color: #e2c876;
+    padding: 1rem;
+    border-radius: 10px 10px 0 0;
+    color: #00096b;
+    min-height: 8rem;
+}
+
+.beneficio_texto{
+    padding: 1rem;
+}
 
 @media only screen and (max-width: 1025px) {
     

@@ -21,6 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
+    
 
     var swiper = new Swiper(".mySwiper", {
         autoplay: {
