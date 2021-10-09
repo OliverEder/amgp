@@ -1,3 +1,8 @@
+const inicio_sesion_btn = document.querySelector("#inicio_sesion_btn");
+const inicio_sesion_modal = document.querySelector("#inicio_sesion_modal");
+const modal_close = document.querySelectorAll(".modal-close");
+const modal_background = document.querySelectorAll(".modal-background");
+
 document.addEventListener('DOMContentLoaded', () => {
 
     // Get all "navbar-burger" elements
@@ -45,3 +50,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
 
+const close_modal = (e) => {
+    e.preventDefault();
+    const modals = document.querySelectorAll(".modal");
+    modals.forEach(modal => {
+        modal.classList.remove("is-active");
+    });
+} 
+
+modal_close.forEach(close_btn => {
+    close_btn.addEventListener("click", close_modal);
+});
+
+inicio_sesion_btn.addEventListener("click", (e)=> {
+    e.preventDefault();
+    inicio_sesion_modal.classList.add("is-active");
+})
+
+modal_background.forEach(close_btn => {
+    close_btn.addEventListener("click", close_modal);
+});

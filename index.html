@@ -133,7 +133,7 @@
                 <a class="navbar-item">
                     Inscribete
                 </a>
-                <a class="navbar-item">
+                <a class="navbar-item" id="inicio_sesion_btn">
                     Inicio de sesión
                 </a>
             </div>
@@ -560,6 +560,47 @@
         </div>
         
     </footer>
+    <div class="modal" id="inicio_sesion_modal">
+        <div class="modal-background"></div>
+        <div class="modal-content animate__animated animate__bounceInDown">
+          <!-- Any other Bulma elements you want -->
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-header-title">
+                        Inicio de sesión
+                    </div>
+                </div>
+                <div class="card-content">
+                    <div class="field">
+                        <label class="label">Correo electronico</label>
+                        <div class="control has-icons-left">
+                            <input class="input is-medium is-info" type="email" placeholder="e.g. alexsmith@gmail.com">
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-envelope"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label">Contraseña</label>
+                        <div class="control has-icons-left">
+                            <input class="input is-medium is-info" type="password" placeholder="Contraseña mayor a 8 caracteres">
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-lock"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="notification is-danger is-light">
+                        <button class="delete"></button>
+                        El correo electronico o la contraseña son incorrectos
+                    </div>
+                    <button class="button is-fullwidth is-link mb-2">Iniciar sesion</button>
+                    <button class="button is-fullwidth is-link is-outlined mb-2">Registrate</button>
+                    <button class="button is-fullwidth is-outlined">Olvide la contraseña</button>
+                </div>
+            </div>
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+    </div>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="./js/navbar.js"></script>
     <script>
