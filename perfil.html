@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asociación Mexicana de Geólogos Petroleros A. C.</title>
+    <link rel="stylesheet" href="css/bulma.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link 
+        rel="stylesheet" 
+        href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" 
+        crossorigin="anonymous"
+    />
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+
+    <style>
+        .swiper {
+    width: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+    color: white;
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.swiper-pagination-bullet-active {
+  color: #e2c876;
+  background: #00096b;
+}
+    </style>
+</head>
+<body class="has-navbar-fixed-top">
+    <!-- Navbar -->
+    <nav class="navbar is-info is-fixed-top" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="https://bulma.io">
+                <img 
+                    src="./images/LOGO300x300.png" 
+                    width="75" 
+                    height="75" 
+                    style="max-height: 100px;"
+                >
+                <p class="navbar-title"> AMGP</p>
+            </a>
+      
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+      
+        <div id="navbarBasicExample" class="navbar-menu animate__animated animate__fadeIn">
+            <div class="navbar-start">
+                <a class="navbar-item">
+                    Inicio
+                </a>
+      
+                <a class="navbar-item">
+                    Noticias
+                </a>
+
+                <a class="navbar-item">
+                    Eventos
+                </a>
+
+                <a class="navbar-item">
+                    Nosotros
+                </a>
+
+                <a class="navbar-item">
+                    Membresia
+                </a>
+
+                <a class="navbar-item">
+                    Directorio
+                </a>
+
+                <a class="navbar-item">
+                    Capitulos de Estudiantes
+                </a>
+      
+                
+                <a class="navbar-item   ">
+                    Publicaciones
+                </a>
+                
+            </div>
+      
+            <div class="navbar-end">
+
+                <div class="navbar-item has-dropdown is-hoverable" id="">
+                    <a class="navbar-link">
+                        usuario@email.com
+                    </a>
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item">
+                          Perfil
+                        </a>
+                        <a class="navbar-item">
+                          Descargas
+                        </a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item">
+                          Cerrar Sesión
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </nav>
+
+
+    <!-- <div class="section">
+        <div class="container is-max-desktop">
+            <div class="box">
+                <h2>Nosotros</h2> color
+                <h2>Beneficos de ser asociado AMGP</h2> blanco
+                <h2>Gaceta la Nacional</h2> color
+                <h2>Delegaciones</h2> blanco
+                <h2>Otras asociaciones e instituiciones</h2> color 
+                <h2>sitios de interes</h2> blanco
+            </div>
+        </div>
+    </div> -->
+    <div class="main">
+        <div class="container">
+            <section class="section">
+                <div class="columns">
+                    <div class="column">
+                        <h1 class="is-size-2 is-size-3-mobile"> <i class="fas fa-user"></i> Perfil</h1>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="column is-6">
+                        <div class="columns">
+                            <div class="column is-4">
+                                <figure class="image is-128x128 mb-5">
+                                    <img class="is-rounded" src="https://bulma.io/images/placeholders/128x128.png">
+                                </figure>
+                                <button class="button is-link">Editar imagen</button>
+                            </div>
+                            <div class="column">
+                                <p class="is-size-5 is-size-5-mobile has-text-link">Asociado Perez Perez</p>
+                                <p class="is-size-6"> <i class="fas fa-book mr-2 has-text-link"></i> Geólogo</p>
+                                <p class="is-size-6"> <i class="fas fa-calendar-alt mr-2 has-text-link"></i> Miembro desde 1994</p>
+                                <p class="is-size-6"> <i class="fas fa-envelope mr-2 has-text-link"></i> Correo electronico: asociado@email.com</p>
+                                <p class="is-size-6"> <i class="fas fa-phone mr-2 has-text-link"></i> Telefono: 55 23456677</p>
+                                <p class="is-size-6"> <i class="fas fa-calendar-day mr-2 has-text-link"></i> Compleaños: 10 de Agosto</p>
+                                <p class="is-size-6"> <i class="fas fa-building mr-2 has-text-link"></i> Compañia: SuperCompu hypermega red</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="column">
+                        <p 
+                            class="
+                                is-size-3 
+                                is-size-5-mobile 
+                                has-text-weight-bold 
+                                has-text-link"
+                        >
+                            Miembro: 1912122312
+                        </p>
+                        <p><i class="fas fa-calendar-alt mr-2 has-text-link"></i> Fecha  de renovación: 01/01/2022</p>
+                        <p><i class="far fa-user fa-calendar-alt mr-2 has-text-link"></i> Tipo de miembro: Premium ultra gold all access cetro de diamante God</p>
+                        <p><i class="fas fa-traffic-light fa-calendar-alt mr-2 has-text-success"></i> Estado: Activo</p>
+                        <p><i class="fas fa-map-marker-alt fa-calendar-alt mr-2 has-text-link"></i> Delegacion: CDMX</p>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="column">
+                        <button class="button is-info">Editar perfil</button>
+                        <button class="button is-info">Ver menbrecia</button>
+                        <button class="button is-info">Certificados</button>
+                    </div>
+                    <div class="column">
+                        <div class="tabs is-centered">
+                            <ul>
+                                <li class="is-active"><a>Descargas</a></li>
+                                <li><a>Datos personales</a></li>
+                                <li><a>Datos profesionales</a></li> 
+                            </ul>
+                          </div>
+                    </div>
+                </div>
+    
+            </section>
+        </div>
+        
+        
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+   
+    <!-- End Navbar -->
+    <div class="footer-divider" id="footer_divider">
+        <div class="custom-shape-divider-top-1630793305">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+                <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+                <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </div>
+    <footer class="footer">        
+        <div class="columns">
+            
+            <div class="column">
+                <center>
+                <img 
+                    src="./images/LOGO300x300.png" 
+                    width="100" 
+                    height="100" 
+                    style="max-height: 100px;"
+                />
+                <h2 class="footer-title">AMGP</h2>
+                <p class="footer-text">Asociación Mexicana de Geólogos Petroleros A. C.</p>
+            </center>
+            </div>
+            <div class="column is-mobile">
+                <h3 class="has-text-weight-bold footer-text">Nosotros</h3>
+                <hr class="navbar-divider">
+                <p class="has-text-justified is-size-7 has-text-white">
+                    La Asociación Mexicana de Geólogos Petroleros es una organización científico-técnica y está constituida 
+                    por profesionales dedicados a la geología petrolera y otras profesiones afines, aplicadas a la 
+                    exploración y producción petrolera y de otros recursos energéticos, agrupados en Delegaciones Regionales 
+                    que dependen de una Directiva Nacional.
+                </p>
+            </div>
+            <div class="column has-text-weight-bold">
+                <h3 class="has-text-weight-bold footer-text">Menu</h3>
+                <hr class="navbar-divider">
+                <div class="columns is-mobile">
+                    <div class="column">
+                        <p class="has-text-justified is-size-7">
+                            <a class="has-text-warning" href="">Inicio</a>
+                        </p>
+                        <p class="has-text-justified is-size-7">
+                            <a class="has-text-warning" href="">Noticias</a>
+                        </p>
+                        <p class="has-text-justified is-size-7">
+                            <a class="has-text-warning" href="">Eventos</a>
+                        </p>
+                        <p class="has-text-justified is-size-7">
+                            <a class="has-text-warning" href="">Nosotros</a>
+                        </p>
+                    </div>
+                    <div class="column">
+                        <p class="has-text-justified is-size-7">
+                            <a class="has-text-warning" href="">Membresia</a>
+                        </p>
+                        <p class="has-text-justified is-size-7">
+                            <a class="has-text-warning"  href="">Directorio</a>
+                        </p>
+                        <p class="has-text-justified is-size-7">
+                            <a class="has-text-warning" href="">Capitulos de Estudiantes</a>
+                        </p>
+                        <p class="has-text-justified is-size-7 ">
+                            <a class="has-text-warning" href="">Publicaciones</a>
+                        </p>
+                    </div>
+                </div>           
+                    
+            </div>  
+            <div class="column">
+                <h3 class="has-text-weight-bold footer-text">Contacto</h3>
+                <hr class="navbar-divider">
+                <p class="has-text-justified is-size-7 has-text-white">
+                    <i class="fas fa-map-marked"></i>
+                    Dirección: Poniente 134 No. 411 Colonia San Bartolo Atepehuacan Alcaldía Gustavo A. Madero, Ciudad de México
+                </p>
+                <p class="has-text-justified is-size-7 has-text-white">
+                    <i class="fas fa-phone-alt"></i>
+                    Telefono: (+52 0155) 55 6788 40
+                </p>
+                <p class="has-text-justified is-size-7 has-text-white">
+                    <i class="far fa-envelope"></i>
+                    Email: presidencia@amgp.org 
+                </p>
+            </div>
+            
+        </div>
+        <div class="columns">
+            <div class="column">
+                <hr class="navbar-divider">
+                <p class="has-text-centered is-size-7 footer-text">
+                    AMGP &#174; 2021. Todo los derechos reservados
+                </p>
+            </div>
+        </div>
+        
+    </footer>
+    <div class="modal" id="inicio_sesion_modal">
+        <div class="modal-background"></div>
+        <div class="modal-content animate__animated animate__bounceInDown">
+          <!-- Any other Bulma elements you want -->
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-header-title">
+                        Inicio de sesión
+                    </div>
+                </div>
+                <div class="card-content">
+                    <div class="field">
+                        <label class="label">Correo electronico</label>
+                        <div class="control has-icons-left">
+                            <input class="input is-medium is-info" type="email" placeholder="e.g. alexsmith@gmail.com">
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-envelope"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label">Contraseña</label>
+                        <div class="control has-icons-left">
+                            <input class="input is-medium is-info" type="password" placeholder="Contraseña mayor a 8 caracteres">
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-lock"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="notification is-danger is-light">
+                        <button class="delete"></button>
+                        El correo electronico o la contraseña son incorrectos
+                    </div>
+                    <button class="button is-fullwidth is-link mb-2">Iniciar sesion</button>
+                    <button class="button is-fullwidth is-link is-outlined mb-2">Registrate</button>
+                    <button class="button is-fullwidth is-outlined">Olvide la contraseña</button>
+                </div>
+            </div>
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="./js/navbar.js"></script>
+    <script>
+        var swiper = new Swiper(".beneficios_swiper", {
+        breakpoints: {
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 50,
+          },
+        },
+        spaceBetween: 30,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+</body>
+</html>
